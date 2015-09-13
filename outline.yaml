@@ -1,0 +1,67 @@
+- Intro
+- String Concatenation:
+    - Javascript
+    - Newman BackOffice
+- String Templates:
+    Python
+    Ruby
+- Executable Templates (arbitary code):
+    - PHP
+    - ASP / JSP
+    - PSP (Python Server Pages):
+        - mod_python
+        - Spyce
+        - Webware
+    - Python:
+        - Cheetah
+        - Mako
+    - Javascript:
+        EJS
+    - Ruby:
+        - ERB
+        - SLIM
+    - Allow arbitary code execution
+    - Bracket / Expression / Bracket
+- Interpreted Templates (sandbox environments):
+    - PHP Templates:
+        - Twig
+        - Smarty
+    - Python:
+        - Django
+        - Jinja2
+    - Ruby:
+        - Liquid
+- Logicless Templates:
+    - Javascript:
+        - Mustache / Handlebars
+- Structured Templates (X(HT)ML):
+    - Python:
+        - ZPT (20 years old)
+        - Kid
+        - Genshi
+    - Ruby:
+        - Radius
+        - Amrita
+    - Java:
+        - Thymeleaf
+- Structured Templates (Whitespace Significant):
+    - Ruby:
+        - HAML
+        - Slim
+    - JavaScript:
+        - Jade
+- Structured Templates (builders):
+    - Python:
+        - Nevow Stan
+        - Elementree Builder
+        - lxml.html.builder
+        - Breve
+        - werkzeug.utils.HTMLBuilder
+    - Ruby:
+        - Hpricot (Deprecated)
+        - NokoGiri
+    - JavaScript:
+        - DOMBuilder
+        - 100s of others
+    - Racket:
+        - X-expressions
