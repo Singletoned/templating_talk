@@ -1,10 +1,21 @@
-- Intro
+- Intro:
+    - What is templating?:
+        - String templating
+        - A system for generating a variety of strings in differant contexts:
+            - Context is a collection of variables
 - String Concatenation:
-    - Javascript
-    - Newman BackOffice
+    - Javascript:
+        - Quickest way to create html
+    - Newman BackOffice:
+        - Complicated system built entirely on top of string concatenation.
+    - Difficult to read
+    - Unsafe to run from untrusted sources:
+        - "'foo' + os.rmtree('/') + 'bar'"
 - String Templates:
-    Python
-    Ruby
+    - Python
+    - Ruby
+    - Structured and Safer
+    - Logic free
 - Executable Templates (arbitary code):
     - PHP
     - ASP / JSP
@@ -20,8 +31,11 @@
     - Ruby:
         - ERB
         - SLIM
-    - Allow arbitary code execution
+    - Allow arbitary code execution:
+        - Turing Complete
     - Bracket / Expression / Bracket
+    - "It's not safe to run templates from untrusted sources"
+    - The vast majority of templating
 - Interpreted Templates (sandbox environments):
     - PHP Templates:
         - Twig
@@ -31,9 +45,14 @@
         - Jinja2
     - Ruby:
         - Liquid
+    - Safer, no arbitary code execution
+    - Can run untrusted code
 - Logicless Templates:
     - Javascript:
         - Mustache / Handlebars
+    - Only a slight advance on string templates
+      - Adds in loops and conditionals
+    - Prevents business logic from being captured in templates
 - Structured Templates (X(HT)ML):
     - Python:
         - ZPT (20 years old)
@@ -44,12 +63,20 @@
         - Amrita
     - Java:
         - Thymeleaf
+    - Not Turing Complete:
+        - "Can't produce strings which are invalid SGML"
+    - Safer:
+        - Normally safe to run other peoples templates
 - Structured Templates (Whitespace Significant):
     - Ruby:
         - HAML
         - Slim
     - JavaScript:
         - Jade
+    - Python:
+        - PyJade
+    - Potentially suited to Python:
+        - We tolerate whitespace significance
 - Structured Templates (builders):
     - Python:
         - Nevow Stan
@@ -65,3 +92,14 @@
         - 100s of others
     - Racket:
         - X-expressions
+    - Build internal structures:
+        - Build, Manipulate, Serializes
+        - Allows passing fragments around
+    - Less readable in terms of document structure
+- Structured Templates (not SGML):
+    - Python:
+        - SQLAlchemy
+        - Django ORM
+    - JavaScript:
+        - SASS/Less
+    - Most query languages
