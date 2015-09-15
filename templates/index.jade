@@ -12,6 +12,12 @@ block title
 block theme
   link(rel="stylesheet" href="css/theme/league.css" id="theme")
 
+block styles
+  style.
+    html.screenshot div.slide-background.present {
+      background-size: contain;
+      background-color: #262722;
+    }
 
 //- Add your slides here. See templates/includes/_mixins.jade for information 
 //- on how `+slide` works.
@@ -156,6 +162,11 @@ block slides
         li Not Turing Complete
         li Safer
         li Normally safe to run other peoples templates
+
+
+  +slide(
+    data-background="images/genshi.png", data-state="screenshot",
+    data-background-transition="slide")
 
   +slide
     h2 Structured (Whitespace Significant)
