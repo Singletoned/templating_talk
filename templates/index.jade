@@ -126,6 +126,13 @@ block slides
         li Ruby
           ul
             li Liquid
+
+  +slide(
+    data-background="images/jinja2.png", data-state="screenshot",
+    data-background-transition="slide")
+
+  +slide
+    h2 Interpreted (sandbox environments)
     div.right(style='float:right;width:48%')
       ul
         li Safer, no arbitary code execution
@@ -133,10 +140,6 @@ block slides
         li Usually a limited syntax
         li Don't have full expressive power of the language
         li Can still be used for anything, not just html
-
-  +slide(
-    data-background="images/jinja2.png", data-state="screenshot",
-    data-background-transition="slide")
 
   +slide
     h2 Logic-free
