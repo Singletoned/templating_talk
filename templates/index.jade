@@ -185,13 +185,13 @@ block slides
 
   +slide
     h2 Structured (Whitespace Significant)
-    div.left(style='float:left;width:48%')
-        ul
-          li Ruby
-            ul
-              li HAML
-              li Slim
     div.right(style='float:right;width:48%')
+      ul
+        li Ruby
+          ul
+            li HAML
+            li Slim
+    div.left(style='float:left;width:48%')
       ul
         li JavaScript
           ul
@@ -199,6 +199,13 @@ block slides
         li Python
           ul
             li PyJade
+
+  +slide(
+    data-background="images/slim.png", data-state="screenshot",
+    data-background-transition="slide")
+
+  +slide
+    h2 Structured (Whitespace Significant)
     ul
       li Potentially suited to Pythonistas
         ul
@@ -206,10 +213,6 @@ block slides
       li Can't produce strings which are invalid SGML
       li Not Turing Complete
       li Not inherently safe
-
-  +slide(
-    data-background="images/slim.png", data-state="screenshot",
-    data-background-transition="slide")
 
   +slide
     h2 Structured (Internal DSL)
