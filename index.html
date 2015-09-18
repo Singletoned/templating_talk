@@ -49,7 +49,7 @@
         </section>
         <section>
           <h2>What types of templating are there?</h2>
-          <h3 class="fragment">(Lots)</h3>
+          <h1 class="fragment">Lots!</h1>
         </section>
         <section>
           <h2>String Concatenation</h2>
@@ -129,38 +129,38 @@
         </section>
         <section>
           <h2>Interpreted (sandbox environments)</h2>
-          <div style="float:left;width:48%" class="left">
-            <ul>
-              <li>PHP Templates
-                <ul>
-                  <li>Twig</li>
-                  <li>Smarty</li>
-                </ul>
-              </li>
-              <li>Python
-                <ul>
-                  <li>Django Templates</li>
-                  <li>Jinja2</li>
-                </ul>
-              </li>
-              <li>Ruby
-                <ul>
-                  <li>Liquid</li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-          <div style="float:right;width:48%" class="right">
-            <ul>
-              <li>Safer, no arbitary code execution</li>
-              <li>Can run untrusted templates</li>
-              <li>Usually a limited syntax</li>
-              <li>Don't have full expressive power of the language</li>
-              <li>Can still be used for anything, not just html</li>
-            </ul>
-          </div>
+          <ul>
+            <li>PHP Templates
+              <ul>
+                <li>Twig</li>
+                <li>Smarty</li>
+              </ul>
+            </li>
+            <li>Python
+              <ul>
+                <li>Django Templates</li>
+                <li>Jinja2</li>
+              </ul>
+            </li>
+            <li>Ruby
+              <ul>
+                <li>Liquid</li>
+              </ul>
+            </li>
+          </ul>
         </section>
         <section data-background="images/jinja2.png" data-state="screenshot" data-background-transition="slide">
+        </section>
+        <section>
+          <h2>Interpreted (sandbox environments)</h2>
+          <ul>
+            <li>Safer, no arbitary code execution</li>
+            <li>Can run untrusted templates</li>
+            <li>Usually a limited syntax</li>
+            <li>Don't have full expressive power of the language</li>
+            <li>Can still be used for anything, not just html</li>
+            <li>Bracket / Expression / Bracket</li>
+          </ul>
         </section>
         <section>
           <h2>Logic-free</h2>
@@ -170,7 +170,7 @@
                 <li>Mustache / Handlebars</li>
               </ul>
             </li>
-            <li>Only a Slight advance on string templates
+            <li>Only a slight advance on string templates
               <ul>
                 <li>Adds in loops and conditionals</li>
               </ul>
@@ -182,46 +182,45 @@
             </li>
             <li>Tends to lead to fatter controllers</li>
             <li>Could be achieved in any other system with enough discipline</li>
+            <li>Inherently safe</li>
           </ul>
         </section>
         <section>
           <h2>Structured (SGML)</h2>
-          <div style="float:left;width:48%" class="left">
-            <ul>
-              <li>Python
-                <ul>
-                  <li>ZPT (20 years old)</li>
-                  <li>Kid</li>
-                  <li>Genshi</li>
-                </ul>
-              </li>
-              <li>Ruby
-                <ul>
-                  <li>Radius</li>
-                  <li>Amrita</li>
-                </ul>
-              </li>
-              <li>Java
-                <ul>
-                  <li>Thymeleaf</li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-          <div style="float:right;width:48%" class="right">
-            <ul>
-              <li>Can't produce strings which are invalid SGML</li>
-              <li>Not Turing Complete</li>
-              <li>Safer</li>
-              <li>Normally safe to run other peoples templates</li>
-            </ul>
-          </div>
+          <ul>
+            <li>Python
+              <ul>
+                <li>ZPT (20 years old)</li>
+                <li>Kid</li>
+                <li>Genshi</li>
+              </ul>
+            </li>
+            <li>Ruby
+              <ul>
+                <li>Radius</li>
+                <li>Amrita</li>
+              </ul>
+            </li>
+            <li>Java
+              <ul>
+                <li>Thymeleaf</li>
+              </ul>
+            </li>
+          </ul>
         </section>
         <section data-background="images/genshi.png" data-state="screenshot" data-background-transition="slide">
         </section>
         <section>
+          <ul>
+            <li>Can't produce strings which are invalid SGML</li>
+            <li>Not Turing Complete</li>
+            <li>Safer</li>
+            <li>Normally safe to run other peoples templates</li>
+          </ul>
+        </section>
+        <section>
           <h2>Structured (Whitespace Significant)</h2>
-          <div style="float:left;width:48%" class="left">
+          <div style="float:right;width:48%" class="right">
             <ul>
               <li>Ruby
                 <ul>
@@ -231,7 +230,7 @@
               </li>
             </ul>
           </div>
-          <div style="float:right;width:48%" class="right">
+          <div style="float:left;width:48%" class="left">
             <ul>
               <li>JavaScript
                 <ul>
@@ -245,6 +244,11 @@
               </li>
             </ul>
           </div>
+        </section>
+        <section data-background="images/slim.png" data-state="screenshot" data-background-transition="slide">
+        </section>
+        <section>
+          <h2>Structured (Whitespace Significant)</h2>
           <ul>
             <li>Potentially suited to Pythonistas
               <ul>
@@ -255,8 +259,6 @@
             <li>Not Turing Complete</li>
             <li>Not inherently safe</li>
           </ul>
-        </section>
-        <section data-background="images/slim.png" data-state="screenshot" data-background-transition="slide">
         </section>
         <section>
           <h2>Structured (Internal DSL)</h2>
@@ -269,6 +271,7 @@
               </ul>
             </li>
             <li>Can't produce strings which are invalid SGML</li>
+            <li>Never quite caught on</li>
           </ul>
         </section>
         <section data-background="images/werkzeug.png" data-state="screenshot" data-background-transition="slide">
@@ -299,13 +302,18 @@
                   <li>100s of others</li>
                 </ul>
               </li>
-              <li>Racket
+              <li>Racket / Scheme
                 <ul>
                   <li>X-Expressions</li>
                 </ul>
               </li>
             </ul>
           </div>
+        </section>
+        <section data-background="images/lxml.png" data-state="screenshot" data-background-transition="slide">
+        </section>
+        <section>
+          <h2>Structured (Builders)</h2>
           <ul>
             <li>Build internal structures
               <ul>
@@ -334,8 +342,22 @@
           </ul>
         </section>
         <section>
+          <h2>A Failed Experiment</h2>
+          <p>I tried to do something new, but it didn't really pan out</p>
+        </section>
+        <section data-background="images/wiseguy.png" data-state="screenshot" data-background-transition="slide">
+        </section>
+        <section>
+          <h2>A Failed Experiment</h2>
+          <ul>
+            <li>Introspectable</li>
+            <li>Highly Performant</li>
+            <li>Difficult to read and maintain</li>
+          </ul>
+        </section>
+        <section>
           <h2>What does the future hold?</h2>
-          <h3>I don't know</h3>
+          <h3 class="fragment">I don't know</h3>
         </section>
         <section>
           <h2>The Future - my guesses</h2>
